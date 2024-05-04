@@ -1,0 +1,10 @@
+account: 0x286ebcDA4a7514716d98289a6c68A07DCD26a0cc
+shitcoin: 0xCd8d3BB06e4d935139B9CB309dE45063647CB876
+ex3:
+  othercoin:
+    - "LULUCOIN"
+    - 0x2ca0A5029402b5139A0666e377E7c52ce73D0FFB
+  paircontract: 0xb3f6C2C77703D1A9748600558D04Aa74f4639907
+ex4:
+  traded: [ "weth", "defi" ]
+  amount: 0.68733105wEth
