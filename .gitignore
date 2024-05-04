@@ -24,3 +24,4 @@ deployments/*
 
 .envrc
 .direnv/
+.states/

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.25;
+pragma solidity 0.8.17;
 import "contracts/erc20.sol";
 
 contract UnpulledRug is IERC20{
     mapping(address => uint256) balances;
-    mapping(address from => mapping(address spender => uint256)) allowances;
+    mapping(address => mapping(address => uint256)) allowances;
     uint _totalSupply=10;
     uint8 _decimals=3;
     string _name="UnpulledRug";
