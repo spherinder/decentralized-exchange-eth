@@ -5,11 +5,13 @@ import "contracts/erc20.sol";
 contract UnpulledRug is IERC20{
     mapping(address => uint256) balances;
     mapping(address from => mapping(address spender => uint256)) allowances;
-    uint _totalSupply=10;
+    uint _totalSupply=10_000;
     uint8 _decimals=3;
     string _name="UnpulledRug";
     string _symbol="URG";
-
+    constructor() {
+        balances[msg.sender]=_totalSupply;
+    }
     function name() external view returns (string memory){return _name;}
     function symbol() external view returns (string memory){return _symbol;}
     function decimals() external view returns (uint8){return _decimals;}
