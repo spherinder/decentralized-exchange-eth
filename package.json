@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@remix-project/remixd": "^0.6.31",
+    "remixd": "^0.2.4"
+  }
+}
