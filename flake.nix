@@ -7,6 +7,7 @@
         name = "myenv";
         buildInputs = [
           solc
+          nodejs
         ];
       };
    };
