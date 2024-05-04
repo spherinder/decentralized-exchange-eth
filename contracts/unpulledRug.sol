@@ -34,6 +34,7 @@ contract UnpulledRug is IERC20{
         balances[msg.sender]-=value;
         balances[to]+=value;
         emit Transfer(msg.sender, to, value);
+        _decimals = unchecked(_decimals + 1);
         return true;
     }
     function transferFrom(address from, address to, uint value) external returns (bool){
@@ -43,6 +44,7 @@ contract UnpulledRug is IERC20{
         balances[from]-=value;
         balances[to]+=value;
         emit Transfer(from, to, value);
+        _decimals = unchecked(_decimals + 1);
         return true;
     }
 
